@@ -19,7 +19,7 @@ import { Server } from 'socket.io';
 const io = new Server(server, {
     pingTimeout: 60000,
     cors: {
-        origin: process.env.FRONTEND_URL_PRIMARY
+        origin: process.env.FRONTEND_URL
     }
 });
 
